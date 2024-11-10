@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+
+development:
+  <<: *default
+  database: mini_ava_development
+
+
+test:
+  <<: *default
+  database: mini_ava_test
+
+
+production:
+  <<: *default
+  database: mini_ava_production
+  username: mini_ava
+  password: <%= ENV["MINI_AVA_DATABASE_PASSWORD"] %>
