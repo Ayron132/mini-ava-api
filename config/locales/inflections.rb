@@ -14,3 +14,15 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+# config/locales/inflections.rb
+
+{
+  en: {
+    activerecord: {
+      models: {
+        user: 'User',
+        post: 'Post'
+      }
+    }
+  }
+}

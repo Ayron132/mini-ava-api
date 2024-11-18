@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   
         resources :posts do
           resources :comments, only: %i[index create]
-          resources :responses, only: [:create, :index]  # Defina a rota para criar respostas
+          resources :responses, only: [:create, :index] 
         end
       end
     end
