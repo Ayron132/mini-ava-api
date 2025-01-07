@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 
-gem "rails", "~> 7.2.1", ">= 7.2.1.2"
+gem "rails", "~> 8.0.1"
 
 gem "pg", "~> 1.1"
 
